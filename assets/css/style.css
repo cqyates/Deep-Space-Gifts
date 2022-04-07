@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: gray;
     color: white
 }
 .carousel {
@@ -9,7 +9,7 @@ body {
     perspective: 1000px
 }
 .carousel .carousel-item {
-    width: 659px;
+    /* width: 250px; */
     height: auto
 }
 main {
