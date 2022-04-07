@@ -1,16 +1,40 @@
+body {
+    background-color: black;
+    color: white
+}
+.carousel {
+    width: auto;
+    /* height: auto; */
+    margin: 10em;
+    perspective: 1000px
+}
+.carousel .carousel-item {
+    width: 659px;
+    height: auto
+}
 main {
     max-width: 1800px;
-    margin: 0 auto;
+    margin: 0 auto
 }
-header {
+/* header {
     display:flex; 
     justify-content:space-between;
 }
 .builder-title {
     width: fit-content;
     margin: 0 auto
-}
-.gallery-title {
+} */
+/* .gallery-title {
     width: fit-content;
     margin: 0 auto
 }
+.carousel-item {
+    display: block;
+    width: 500px; 
+    border: 10px solid white;
+    border-bottom: 25px solid white;
+    box-shadow: 2px 10px 10px gray;
+}
+.carousel-item {
+    border: 10px solid green
+} */

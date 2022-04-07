@@ -1,22 +1,47 @@
-// test one -- run most basic fetch from Nasa Image Libary and console.log the results
-// This fetch fails for "Invalid Search Parameter api_key"
-fetch("https://images-api.nasa.gov/search?q=hubble&page=1", {
-    api_key: "DEMO_KEY"
-}).then(function(response){
-    return response.json()
-}).then(function(data){
-    for(var i = 0; i < 10; i++) {
-        console.log(data.collection.items[i])
-    }
-})
+// $(document).ready(function () {
+//     var imgObjArray = []
+//   var imageContainer = $(".carousel-inner");
+//   fetch("https://images-api.nasa.gov/search?q=hubble&page=1", {
+//     api_key: "WSXS6UpIdCzVPyL4krzd37fhXgvuFfWGiAdgtNgh",
+//   })
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//         for (var i = 0; i < 10; i++) {
+//           var imgObj = {
+//               img_path: data.collection.items[i].links[0].href,
+//               status: "",
+//               className: "d-block"
+//           }
+//           imgObjArray.push(imgObj)
+        
+//           // imgDiv.addClass("carousel-item");
+//           // imgDiv.addClass(imgObj.className)
+//           // imgDiv.attr("data-bs-interval", "10000");
+//           // imgEL.attr("src",imgObj.img_path)
+//           // imgDiv.addClass("d-block w-100")
+//           // imageContainer.append(imgDiv.append(imgEL))
+//         }
+//         buildImageCarousel(imgObjArray)
+//     //   imgDiv.addClass("d-block w-100")
+//     });
+// });
 
-//Solution 1 -- remove https and use http -- failed this is not the problem
-// Solution 2 -- make sure I have all the characters for the api_key from email. -- this is not the problem
-//solution 3 -- replace the api-key with DEMO_KEY -- because this failed I know the problem is the code and not the key
+// function buildImageCarousel(imgArray) {
+//     var imgDiv = $("<div>").addClass("carousel-item");
+//     var imgEl = $("<img>")
+//       imgArray.forEach(function(imgObj) {
+//           var sourcepath = imgObj.img_path;
+            
+//       })
+// }
+//task, create working bootstrap image carousel
 
-// solution 4 -- check endpoint requirements.
 
-// Final Solution was to pass the API key through the options parameter
-
-
-
+{/* <div class="carousel-item" data-bs-interval="2000">
+<img src="..." class="d-block w-100" alt="..." />
+</div>
+<div class="carousel-item">
+<img src="..." class="d-block w-100" alt="..." />
+</div> */}
