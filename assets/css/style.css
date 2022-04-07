@@ -16,6 +16,9 @@ main {
     max-width: 1800px;
     margin: 0 auto
 }
+.hide {
+    display: none
+}
 /* header {
     display:flex; 
     justify-content:space-between;
